@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GTP Nutrition Planner</title>
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+<body>
+  <div id = "toptext">
+    <h1>Welcome to the AI Powered Nutrition Planner</h1>
+  </div>
+  <form action = "http://localhost:5000/login" method = "post" id="personform">
+    <label for="age">Age: </label>
+    <input type="text" id ="age"><br><br>
+    <label for="gender">Gender: </label>
+    <select id="gender" name ="gender">
+      <option value ="male">Male</option>
+      <option value ="female">Female</option>
+      <option value ="other">other</option>
+    </select> <br><br>
+    <label for="height">Height (in cm): </label>
+    <input type ="text" id="height"><br><br>
+    <label for = "weight">Weight (in kg): </label>
+    <input type ="text" id="weight"> <br><br>
+    <label for="activity_level">Activity Level:</label>
+    <select id="activity_level" name="activity_level">
+      <option value="sedentary">Sedentary</option>
+      <option value="light">Light</option>
+      <option value="moderate">Moderate</option>
+      <option value="active">Active</option>
+      <option value="very_active">Very Active</option>
+    </select><br><br>
+    <label for ="allergies">Allergies:</label>
+    <input type = "text" id = "allergies" value = "Please List your allergies, if you have any..."> <br><br>
+    <label for ="medical_conditions">Medical Conditions: </label>
+    <input type = "text" id = "medical_conditions" value = "Please list your medical conditions, if you have any"><br><br>
+    <label for = "goals">Goals (list in simple terms):</label>
+    <input type = "text" id = "goals"> <br><br>
+    <input type="submit" value="Generate Personalized Nutrition Plan">
+  </form>
+
+  <div id="chatbox">
+    <div id="chatlog">
+      <div id="chat-response"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="static/js/script.js"></script>
+</body>
+</html>

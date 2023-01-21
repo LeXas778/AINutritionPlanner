@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #fff, #d7ffda );
+    text-align:center;
+  }
+  
+form{
+  margin:50px;
+}
+  #chatbox {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #chatlog {
+    height: 400px;
+    overflow-y: scroll;
+  }
+  
+  #chatform {
+    margin-top: 10px;
+  }
+  
+  #chatinput {
+    width: 85%;
+    margin-right: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
