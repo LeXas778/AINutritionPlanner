@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(45deg, #fff, #d7ffda );
-    text-align:center;
+    
   }
   
+#topdiv {
+  text-align:center;
+}
+
 form{
-  margin:50px;
+  margin-top:50px;
 }
   #chatbox {
     width: 800px;

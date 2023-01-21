@@ -5,9 +5,9 @@
   <link rel="stylesheet" type="text/css" href="static/css/styles.css">
 </head>
 <body>
-  <div id = "toptext">
+  <div id = "topdiv">
     <h1>Welcome to the AI Powered Nutrition Planner</h1>
-  </div>
+  
   <form action = "http://localhost:5000/login" method = "post" id="personform">
     <label for="age">Age: </label>
     <input type="text" id ="age"><br><br>
@@ -37,7 +37,8 @@
     <input type = "text" id = "goals"> <br><br>
     <input type="submit" value="Generate Personalized Nutrition Plan">
   </form>
-
+  <p id = "loading"> </p>
+</div>
   <div id="chatbox">
     <div id="chatlog">
       <div id="chat-response"></div>

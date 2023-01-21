@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#personform").submit(function(e) {
         e.preventDefault();
+        $("#loading").html("loading...");
         var message = "";
         let age = $("#age").val();
         let gender = $("#gender").val();
@@ -23,11 +24,14 @@ $(document).ready(function() {
             data: JSON.stringify({ "message": message }),
             contentType: "application/json",
             success: function(data) {
+                $("#loading").html(" ");
+                $("#chatlog").html("");
                 $("#chatlog").append("<div class='chat-response'>" +data.response + "</div></br>");
                 $("#chatlog").scrollTop($("#chatlog")[0].scrollHeight);
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 console.log(textStatus, errorThrown);
+                $("#loading").html("error. see console for more information");
             }
         });
     });
