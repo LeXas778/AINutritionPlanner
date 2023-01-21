@@ -3,6 +3,6 @@
 
 To run the web app. Download the whole project. Run cmd inside of the project. Run the command 
 
-"py main.py"
+`"py main.py"`
 
 A localhost web app should start.
