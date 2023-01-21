@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         message = "I am a " + age + " year old " + gender + ", " + height + "cm tall and weigh " + weight + "kg. My acitivity level is: " + 
         activitylevel + ". Goals: " + goals + ". Allergies: " + allergies + ". Medical conditions: " + medicalconditions +
-        ". Please create a nutrition plan that will help me reach my goals, taking into account my activity level and any nutrient deficiencies I may have. Also, generate a sample nutrition plan on what I should eat in a day.";
+        ". Please create a nutrition plan that will help me reach my goals, taking into account my activity level and any nutrient deficiencies I may have. Also, give me 3 sample nutrition plans on what I should eat in a day.";
 
         console.log(message)
         $("#chatinput").val("");
