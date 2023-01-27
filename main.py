@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 import openai
+import config
 
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = config.apikey
 
 
 @app.route("/")
