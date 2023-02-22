@@ -11,7 +11,9 @@ $(document).ready(function() {
         let allergies = $("#allergies").val();
         let medicalconditions = $("#medical_conditions").val();
         let goals = $("#goals").val();
-
+        
+        //Generate Prompt using the user input
+        
         message = "I am a " + age + " year old " + gender + ", " + height + "cm tall and weigh " + weight + "kg. My acitivity level is: " + 
         activitylevel + ". Goals: " + goals + ". Allergies: " + allergies + ". Medical conditions: " + medicalconditions +
         ". Please create a nutrition plan that will help me reach my goals, taking into account my activity level and any nutrient deficiencies I may have. Also, give me 3 sample nutrition plans on what I should eat in a day.";
